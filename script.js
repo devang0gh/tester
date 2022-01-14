@@ -31,6 +31,27 @@ var userLocationLatLng        //will store coordinates of locationInput
 // })
 // }
 
+function locationInput () { //Return stores that value into the function, Which way to go, why, direction??!!!!//
+  if (locationInput.includes(" ") == true) 
+    return locationInput.replace(/\s+/g, '');
+  }
+  
+  
+  
+  // function locationInput() {
+  //   if (locationInput.includes(" ") == true) {
+  //   var geolocationInput = locationInput.replace(/\s+/g, ")
+  //   }
+  //   }
+  
+  
+    // var geolocationInput = function() {
+    //   return locationInput.replace(/\s+/g, '')
+    // }
+
+
+
+
 yelpCallAPI()
 function yelpCallAPI() {
 //the first half of this url is needed because of a CORS error
